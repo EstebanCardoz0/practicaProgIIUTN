@@ -3,7 +3,7 @@ public class UsoCivil {
 
 
         Cocher coche = new Cocher();
-        coche.mostrarUso();
+//        coche.mostrarUso();
     }
 }
 
