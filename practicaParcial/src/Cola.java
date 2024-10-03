@@ -5,9 +5,9 @@ public class Cola {
 
     public static void main(String[] args) {
         Queue<Integer> cola= new LinkedList<>();
-        cola.add(1);
-        cola.add(2);
-        System.out.println(cola.poll());
+//        cola.add(1);
+//        cola.add(2);
+        System.out.println(cola.peek());
 
     }
 }
