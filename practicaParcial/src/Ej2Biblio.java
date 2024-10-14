@@ -10,7 +10,7 @@ public class Ej2Biblio {
     public static void main(String[] args) {
 
         Biblioteca bibli = new Biblioteca();
-        bibli.setLibros(new ArrayList<Libro>());
+//        bibli.setLibros(new ArrayList<Libro>());
         Libro li1=new Libro("El Aleph","Borges");
         Libro li2=new Libro("1984","Orwell");
         Libro li3=new Libro("Un mundo feliz","Huxley");
@@ -34,6 +34,14 @@ class Biblioteca {
         for (Libro li : libros) {
             System.out.println(li.toString());
         }
+    }
+
+    public Biblioteca(List<Libro> libros) {
+        this.libros = libros;
+    }
+
+    public Biblioteca() {
+        this.libros=new ArrayList<>();
     }
 
     public List<Libro> getLibros() {
